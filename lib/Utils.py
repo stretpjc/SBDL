@@ -1,3 +1,4 @@
+import sys
 from pyspark.sql import SparkSession
 
 
@@ -16,3 +17,10 @@ def get_spark_session(env):
             .getOrCreate()
 
 
+def arg_check(args):
+    if len(args) < 3:
+        print("Usage: sbdl {local, qa, prod} {load_date} : Arguments are missing")
+        sys.exit(-1)
+    job_run_env = args[1].upper()
+    load_date = args[2]
+    return job_run_env, load_date

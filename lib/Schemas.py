@@ -1,6 +1,24 @@
 from pyspark.sql.types import StructType, StructField, DateType, StringType, IntegerType, TimestampType, LongType, \
     DoubleType, ArrayType
 
+
+def select_schema(table):
+    if table == "address":
+        return address_schema
+    if table == "account":
+        return account_schema
+    if table == "party":
+        return party_schema
+
+
+def choose_constraint(table):
+    if table == "address":
+        return "party_id"
+    if table == "account":
+        return "account_id"
+    if table == "party":
+        return "party_id"
+
 # Input file schemas:
 address_schema = StructType([
     StructField("load_date", DateType()),

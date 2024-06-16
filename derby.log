@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sat Jun 15 19:04:50 CDT 2024:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0190-1e5c-6556-00001518e3d8 
+on database directory /Users/pedro.mora/Documents/GitHub/SBDL/metastore_db with class loader sun.misc.Launcher$AppClassLoader@5b6f7412 
+Loaded from file:/Users/pedro.mora/spark/spark-3.5.1-bin-hadoop3/jars/derby-10.14.2.0.jar
+java.vendor=Azul Systems, Inc.
+java.runtime.version=1.8.0_362-b08
+user.dir=/Users/pedro.mora/Documents/GitHub/SBDL
+os.name=Mac OS X
+os.arch=x86_64
+os.version=14.5
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

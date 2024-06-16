@@ -5,33 +5,33 @@
         "eventType": "SBDL-Contract",
         "majorSchemaVersion": 1,
         "minorSchemaVersion": 0,
-        "eventDateTime": "2022-09-06T20:49:03+0530"
+        "eventDateTime": "2022-09-06T20:49:03+0530" //current timestamp
     },
     "keys":
     [
         {
             "keyField": "contractIdentifier",
-            "keyValue": "6982391060"
+            "keyValue": "6982391060" //Account ID from account table
         }
     ],
     "payload":
     {
-        "contractIdentifier":
+        "contractIdentifier": //Account ID from accounts table
         {
             "operation": "INSERT",
             "newValue": "6982391060"
         },
-        "sourceSystemIdentifier":
+        "sourceSystemIdentifier": //source_sys from account table
         {
             "operation": "INSERT",
             "newValue": "COH"
         },
-        "contactStartDateTime":
+        "contactStartDateTime": //account_start_date from accounts table
         {
             "operation": "INSERT",
             "newValue": "2018-03-24T13:56:45.000+05:30"
         },
-        "contractTitle":
+        "contractTitle": //legal titles from account table
         {
             "operation": "INSERT",
             "newValue":
@@ -51,16 +51,16 @@
             "operation": "INSERT",
             "newValue":
             {
-                "taxIdType": "EIN",
-                "taxId": "ZLCK91795330413525"
+                "taxIdType": "EIN", //tax_id_type from account table
+                "taxId": "ZLCK91795330413525" //tax id from account table
             }
         },
-        "contractBranchCode":
+        "contractBranchCode": //branch_code from account table
         {
             "operation": "INSERT",
             "newValue": "ACXMGBA5"
         },
-        "contractCountry":
+        "contractCountry": //country from account table
         {
             "operation": "INSERT",
             "newValue": "Mexico"
@@ -68,22 +68,22 @@
         "partyRelations":
         [
             {
-                "partyIdentifier":
+                "partyIdentifier": //party ID from party table
                 {
                     "operation": "INSERT",
                     "newValue": "9823462810"
                 },
-                "partyRelationshipType":
+                "partyRelationshipType": //relation_type from party table
                 {
                     "operation": "INSERT",
                     "newValue": "F-N"
                 },
-                "partyRelationStartDateTime":
+                "partyRelationStartDateTime": //relation_start_date from party table
                 {
                     "operation": "INSERT",
                     "newValue": "2019-07-29T06:21:32.000+05:30"
                 },
-                "partyAddress":
+                "partyAddress": // address from addres table
                 {
                     "operation": "INSERT",
                     "newValue":
